@@ -1,0 +1,29 @@
+@import _mixin
+
+$twColor: #00acee, #1a8dc2, #206f98, #205370, #1b384a, #141f27, #000000,#142835
+@for $i from 1 through 8
+	@include bgc(bg-tw#{$i},nth($twColor, $i))
+	@include color(text-tw#{$i},nth($twColor,$i))
+@include hnpx(55)
+@include hnpx(400)
+@include wnpx(400)
+@include hnpx(30)
+@include wnpx(30)
+@include wnpx(500)
+@include hnpx(800)
+@include hnpx(600)
+@include hnpx(50)
+@include wnpx(50)
+@include hnpx(60)
+@include wnpx(60)
+@include hnpx(200)
+@include wnpx(300)
+@include hnpx(300)
+.active
+	border-bottom: 3px solid #00acee
+.active
+	.i
+		color: #00acee
+.pos-fix
+	right: 8%
+	bottom: 15px
